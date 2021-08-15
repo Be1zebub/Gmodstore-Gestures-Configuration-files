@@ -1,3 +1,5 @@
+-- author: https://www.gmodstore.com/users/76561198814034474
+
 return {
     NpcName = "Animations Verkäufer", -- npc overhead, also displayed in the menu header
     Press = "Drücken",  -- npc overhead
