@@ -10,7 +10,7 @@ hook.Run("IncGestures/ConfigIncluded") -- do not touch this line
 -- Best icons can be found here: https://www.flaticon.com/search?word=lamp&license=selection&color=1&stroke=1&order_by=4&type=icon (free + black filled = :cool:)
 
 															   -- You can also use regular materials path if u wanna.
-INC_GESTURES:Add("Thumbsup", {Sequence = "gesture_agree_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsup.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/nice.mp3"})
+INC_GESTURES:Add("Thumbsup", {Sequence = "gesture_agree_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsup.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/nice.mp3", DisableSoundEffect = true})
 INC_GESTURES:Add("Disagree", {Sequence = "gesture_disagree_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsdown.png"})
 INC_GESTURES:Add("Bow", {Sequence = "gesture_bow_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/bow.png"})
 INC_GESTURES:Add("Becon", {Sequence = "gesture_becon_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/becon.png"})
@@ -23,7 +23,7 @@ INC_GESTURES:Add("Signal halt", {Sequence = "gesture_signal_halt_original", Icon
 
 
 INC_GESTURES:Add("Cheer", {Sequence = "taunt_cheer_base", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/cheer.png"})
-INC_GESTURES:Add("Laugh", {Sequence = "taunt_laugh_base", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/laugh.png"})
+INC_GESTURES:Add("Laugh", {Sequence = "taunt_laugh_base", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/laugh.png", Sound = "vo/npc/Barney/ba_laugh04.wav"}) -- You can add sounds (path or url)
 INC_GESTURES:Add("Persistence", {Sequence = "taunt_persistence_base", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/persistence.png"})
 INC_GESTURES:Add("Zombie", {Sequence = "taunt_zombie_original", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/zombie.png"})
 
@@ -37,8 +37,9 @@ INC_GESTURES:Add("Robo Dance", {Sequence = "taunt_robot_base", Icon = "https://i
 
 INC_GESTURES:Add("Twist Dance", {Sequence = "wos_fn_twist", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/dance3.png", Price = 500, Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/twist.mp3", SoundVolume = 1}) -- Volume to set. 1 meaning 100% volume, 0.5 is 50% and 3 is 300%, etc.
 INC_GESTURES:Add("Fresh Dance", {Sequence = "wos_fn_fresh", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/dance2.png", Price = 1000})
-INC_GESTURES:Add("Disco Fever", {Sequence = "wos_fn_discofever", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/disco.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/disco.ogg", SoundVolume = 5}) -- 5 is 100% volume
-INC_GESTURES:Add("Noob dance", {Sequence = "wos_fn_dancemoves", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/noob.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/noob.mp3", SoundVolume = 1})
+INC_GESTURES:Add("Disco Fever", {Sequence = "wos_fn_discofever", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/disco.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/disco.ogg", SoundVolume = 10}) -- 5 is 100% volume
+INC_GESTURES:Add("Noob dance", {Sequence = "wos_fn_dancemoves", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/noob.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/fortnite_noob_dance_by_orkpod.mp3", SoundVolume = 1})
+INC_GESTURES:Add("Hardbass", {Sequence = "wos_fn_intensity", Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/hardbass.png", Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/hardbass.mp3"})
 
 -- Also you can add specific gestures for job
 --[[ Example:
@@ -57,7 +58,7 @@ INC_GESTURES.CurrencyCompatibility = "darkrp_money" -- darkrp_money/helix_money/
 
 INC_GESTURES.Lang = "en" -- en/ru/fr/e.t.c langs can be found here: garrysmod/addons/gestures/lua/gestures/langs
 
-INC_GESTURES.Key = "c" -- Default keybind
+INC_GESTURES.Key = "c" -- Default keybind (players also can change keybind with 'gestures_key' cvar locally. the local bind has no priority over this variable since 1.1.3, so cvar will be reset to the config value when the keybind is changed in the config.)
 
 INC_GESTURES.Fonts = {
 	GestureName = { -- center text in radial menu
