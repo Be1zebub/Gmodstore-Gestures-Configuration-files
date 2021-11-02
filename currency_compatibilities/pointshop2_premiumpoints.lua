@@ -3,9 +3,13 @@ function INC_GESTURES:TakeMoney(ply, num)
 end
 
 function INC_GESTURES:CanAfford(ply, num)
-	return (ply:PS2_GetWallet(num) or {}).premiumPoints or 0) >= num
+	return ((ply:PS2_GetWallet(num) or {}).premiumPoints or 0) >= num
 end
 
 function INC_GESTURES:FormatMoney(num)
-	return num .." points"
+	return string.Comma(num) .." premium points"
+end
+
+function INC_GESTURES:AddMoney(ply, num)
+	ply:PS2_AddPremiumPoints(num)
 end

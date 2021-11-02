@@ -1,15 +1,15 @@
 function INC_GESTURES:TakeMoney(ply, num)
-	ply:getChar():takeMoney(num)
+	ply:SH_AddPremiumPoints(-num)
 end
 
 function INC_GESTURES:CanAfford(ply, num)
-	return ply:getChar():hasMoney(num)
+	return ply:SH_CanAffordPremium(num)
 end
 
 function INC_GESTURES:FormatMoney(num)
-	return nut.currency.get(num)
+	return string.Comma(num) .." premium points"
 end
 
 function INC_GESTURES:AddMoney(ply, num)
-	ply:getChar():giveMoney(num)
+	ply:SH_AddPremiumPoints(num)
 end

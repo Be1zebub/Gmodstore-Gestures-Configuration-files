@@ -1,15 +1,15 @@
 function INC_GESTURES:TakeMoney(ply, num)
-	ply:PS2_AddStandardPoints(-num)
+	ply:SH_AddStandardPoints(-num)
 end
 
 function INC_GESTURES:CanAfford(ply, num)
-	return ((ply:PS2_GetWallet(num) or {}).points or 0) >= num
+	return ply:SH_CanAffordStandard(num)
 end
 
 function INC_GESTURES:FormatMoney(num)
 	return string.Comma(num) .." points"
 end
 
-function INC_GESTURES:AddMoney(ply, num)
-	ply:PS2_AddStandardPoints(num)
+function INC_GESTURES:TakeMoney(ply, num)
+	ply:SH_AddStandardPoints(num)
 end

@@ -9,3 +9,7 @@ end
 function INC_GESTURES:FormatMoney(num)
 	return ix.currency.Get(num)
 end
+
+function INC_GESTURES:AddMoney(ply, num)
+	ply:GetCharacter():GiveMoney(num)
+end

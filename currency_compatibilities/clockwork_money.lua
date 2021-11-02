@@ -9,3 +9,7 @@ end
 function INC_GESTURES:FormatMoney(num)
 	return DarkRP.formatMoney(num)
 end
+
+function INC_GESTURES:AddMoney(ply, num)
+	Clockwork.player:GiveCash(ply, num)
+end

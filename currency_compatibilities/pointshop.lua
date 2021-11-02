@@ -7,5 +7,9 @@ function INC_GESTURES:CanAfford(ply, num)
 end
 
 function INC_GESTURES:FormatMoney(num)
-	return num .." points"
+	return string.Comma(num) .." points"
+end
+
+function INC_GESTURES:AddMoney(ply, num)
+	ply:PS_GivePoints(num)
 end

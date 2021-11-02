@@ -12,3 +12,7 @@ end
 function INC_GESTURES:FormatMoney(num)
 	return num .." lvl"
 end
+
+function INC_GESTURES:AddMoney(ply, num)
+	-- nothing
+end
