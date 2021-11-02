@@ -18,5 +18,10 @@ return {
 	-- vendor npc tool popup menues
 	ModelSelector = "Selektor Modeli",
 	AnimationSelector = "Selektor animacji",
-	CopyToClipboard = "Skopiuj do Schowka"
+	CopyToClipboard = "Skopiuj do Schowka",
+
+	NpcNameRefund = "Powrót gestu",
+	RefundAlready = "Dokonałeś już zwrotu pieniędzy!",
+	RefundCant = "Twoja lista zakupów jest pusta, nie masz nic do zwrotu.",
+	HowManyRefund = "Zwróciłeś %s"
 }

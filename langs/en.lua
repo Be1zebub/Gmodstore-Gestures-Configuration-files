@@ -16,5 +16,10 @@ return {
 	-- vendor npc tool popup menues
 	ModelSelector = "Model Selector",
 	AnimationSelector = "Animation Selector",
-	CopyToClipboard = "Copy to Clipboard"
+	CopyToClipboard = "Copy to Clipboard",
+
+	NpcNameRefund = "Gestures refund",
+	RefundAlready = "You have already made a refund!",
+	RefundCant = "Your purchases list is empty, you have nothing to refund.",
+	HowManyRefund = "You have refunded %s"
 }

@@ -18,5 +18,10 @@ return {
     -- vendor npc tool popup menues
     ModelSelector = "Model Wähler",
     AnimationSelector = "Animation Wähler",
-    CopyToClipboard = "In Zwischenablage kopiert"
+    CopyToClipboard = "In Zwischenablage kopiert",
+
+    NpcNameRefund = "Gesten Rückerstattung",
+    RefundAlready = "Sie haben bereits eine Rückerstattung vorgenommen!",
+    RefundCant = "Ihre Einkaufsliste ist leer, Sie haben nichts zu erstatten.",
+    HowManyRefund = "Sie haben %s zurückerstattet"
 }

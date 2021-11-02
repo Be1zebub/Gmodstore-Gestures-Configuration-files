@@ -18,5 +18,10 @@ return {
 	-- vendor npc tool popup menues
 	ModelSelector = "Model Seçici",
 	AnimationSelector = "Animasyon Seçici",
-	CopyToClipboard = "Panoya Kopyala"
+	CopyToClipboard = "Panoya Kopyala",
+
+	NpcNameRefund = "Gestures refund",
+	RefundAlready = "Zaten geri ödeme yaptınız!",
+	RefundCant = "Satın alma listeniz boş, iade edecek hiçbir şeyiniz yok.",
+	HowManyRefund = "%s iade ettiniz"
 }
