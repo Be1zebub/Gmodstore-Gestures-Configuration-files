@@ -10,11 +10,13 @@ INC_GESTURES:Add("Thumbsup", {
 	Sequence = "gesture_agree_original", -- Use sequence viewer https://steamcommunity.com/sharedfiles/filedetails/?id=2493778309 for list all player animations (some custom models may include custom animations, so make sure that the animation will work on default player models. there are also addons that add custom animations to all models, you should also make sure that they work correctly.)
 	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsup.png", -- You can use path or url. Best icons can be found here: https://www.flaticon.com/search?word=lamp&license=selection&color=1&stroke=1&order_by=4&type=icon (free + black filled = :cool:)
 	Sound = "https://incredible-gmod.ru/gmodstore/gestures/content/nice.mp3", -- You can add sounds (path or url)
-	DisableSoundEffect = true -- FFT Dolly Zoom effect (a cool effect that increases the fun from dances, but may not be suitable for specific gestures) - it also does not affect anything if the gesture does not have a sound
+	DisableSoundEffect = true, -- FFT Dolly Zoom effect (a cool effect that increases the fun from dances, but may not be suitable for specific gestures) - it also does not affect anything if the gesture does not have a sound
+	FirstPerson = true
 })
 INC_GESTURES:Add("Disagree", {
 	Sequence = "gesture_disagree_original",
-	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsdown.png"
+	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/thumbsdown.png",
+	FirstPerson = true
 })
 INC_GESTURES:Add("Bow", {
 	Sequence = "gesture_bow_original",
@@ -22,7 +24,8 @@ INC_GESTURES:Add("Bow", {
 })
 INC_GESTURES:Add("Becon", {
 	Sequence = "gesture_becon_original",
-	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/becon.png"
+	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/becon.png",
+	FirstPerson = true
 })
 INC_GESTURES:Add("Salute", {
 	Sequence = "gesture_salute_original",
@@ -30,7 +33,8 @@ INC_GESTURES:Add("Salute", {
 })
 INC_GESTURES:Add("Wave", {
 	Sequence = "gesture_wave_original",
-	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/wave.png"
+	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/wave.png",
+	FirstPerson = true
 })
 
 INC_GESTURES:Add("Signal forward", {
@@ -54,7 +58,8 @@ INC_GESTURES:Add("Cheer", {
 INC_GESTURES:Add("Laugh", {
 	Sequence = "taunt_laugh_base",
 	Icon = "https://incredible-gmod.ru/gmodstore/gestures/content/laugh.png",
-	Sound = "vo/npc/Barney/ba_laugh04.wav"
+	Sound = "vo/npc/Barney/ba_laugh04.wav",
+	FirstPerson = true
 })
 INC_GESTURES:Add("Persistence", {
 	Sequence = "taunt_persistence_base",
