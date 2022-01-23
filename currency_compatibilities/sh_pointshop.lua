@@ -10,6 +10,6 @@ function INC_GESTURES:FormatMoney(num)
 	return string.Comma(num) .." points"
 end
 
-function INC_GESTURES:TakeMoney(ply, num)
+function INC_GESTURES:AddMoney(ply, num)
 	ply:SH_AddStandardPoints(num)
 end
