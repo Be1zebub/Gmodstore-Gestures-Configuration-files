@@ -9,7 +9,7 @@ function INC_GESTURES:CanAfford(ply, num)
 end
 
 function INC_GESTURES:FormatMoney(num)
-	return PL_IGS(num)
+	return PL_MONEY(num)
 end
 
 function INC_GESTURES:AddMoney(ply, num)
